@@ -25,7 +25,7 @@ function App() {
 
             <div className="font-bold">
               <span className="text-3xl">Hey, I'm</span> <br></br>
-              <span className="text-4xl text-blue-900">Samuel Lee</span>
+              <span className="text-4xl text-blue-900">Samuel Lee.</span>
             </div>
             <SocialMediaIcons></SocialMediaIcons>
             <p className="w-3/4 sm:w-full">
