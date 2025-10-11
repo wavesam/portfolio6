@@ -3,6 +3,7 @@
 html,
 body {
   overscroll-behavior: none;
+  background-color: oklch(93.2% 0.032 255.585);
 }
 
 ::-webkit-scrollbar {
