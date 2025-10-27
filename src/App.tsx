@@ -81,18 +81,6 @@ function App() {
           <div className="w-full h-full flex flex-col gap-5">
             <h1 className="text-2xl font-bold">Robotics & Competitions</h1>
             <ProjectCard
-              title="SAUVC 2025 - Singapore AUV Challenge"
-              technologies={[
-                "C++",
-                "ROS",
-                "OpenCV",
-                "Python",
-                "Embedded Systems",
-                "Computer Vision",
-              ]}
-              description="Currently competing in the international Singapore Autonomous Underwater Vehicle Challenge with PolyU's robotics team. Developing computer vision systems and control algorithms for autonomous underwater navigation and task completion."
-            />
-            <ProjectCard
               title="Mini-ROV Competition"
               technologies={["C++", "Arduino"]}
               description="A competition I went to in 2023 as part of my university's ROV team. We built an underwater robot to complete various tasks."
