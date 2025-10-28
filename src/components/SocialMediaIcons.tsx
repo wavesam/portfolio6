@@ -26,7 +26,7 @@ const SocialMediaIcons = () => {
       </a>
 
       <a
-        href="mailto:samuel.yh.lee@gmail.com"
+        href="mailto:samuel@wavesam.io"
         target="_blank"
         rel="noopener noreferrer"
         className="hover:text-gray-400 transition-colors duration-200"
