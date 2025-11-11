@@ -18,11 +18,11 @@ const ProjectCard = ({
   image,
 }: ProjectParams) => {
   return (
-    <div className="flex flex-col gap-5 justify-between p-5 rounded-3xl bg-gradient-to-b from-white to-neutral-100 shadow-md shadow-neutral-400 hover:shadow-lg transition-shadow duration-300">
+    <div className="flex flex-col gap-5 justify-between p-5 rounded-3xl bg-gradient-to-b from-white to-neutral-100 shadow-md shadow-neutral-400 hover:shadow-lg rotate-1 hover:rotate-0 hover:-translate-y- transition duration-300">
       {image && (
         <img
           src={image}
-          className="h-[200px] object-cover rounded-2xl"
+          className="aspect-video object-cover rounded-2xl"
           loading="lazy"
         ></img>
       )}
