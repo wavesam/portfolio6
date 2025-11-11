@@ -18,9 +18,9 @@ const ProjectCard = ({
   image,
 }: ProjectParams) => {
   return (
-    <div className="flex flex-col gap-5 justify-between p-5 border-2 rounded-lg bg-white shadow-md hover:shadow-2xl transition-shadow duration-300">
+    <div className="flex flex-col gap-5 justify-between p-5 border-2 rounded-3xl bg-white shadow-md hover:shadow-2xl transition-shadow duration-300">
       {image && (
-        <img src={image} className="h-[200px] object-cover rounded-lg"></img>
+        <img src={image} className="h-[200px] object-cover rounded-2xl"></img>
       )}
       <div className="flex flex-col gap-3">
         <div className="text-2xl font-bold">{title}</div>
@@ -29,7 +29,7 @@ const ProjectCard = ({
             {technologies.map((tech, index) => (
               <span
                 key={index}
-                className="bg-gray-200 text-gray-800 px-2 py-1 rounded text-sm"
+                className="bg-gray-200 text-gray-800 px-2 py-1 rounded-3xl text-sm"
               >
                 {tech}
               </span>
@@ -44,7 +44,7 @@ const ProjectCard = ({
                 href={githubUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full text-center rounded text-lg px-2 py-2 bg-gray-300 hover:bg-gray-300/60 transition-colors duration-500 font-semibold"
+                className="w-full text-center rounded-3xl text-lg px-2 py-2 bg-gray-300 hover:bg-gray-300/60 transition-colors duration-500 font-semibold"
               >
                 View on GitHub
               </a>
@@ -54,7 +54,7 @@ const ProjectCard = ({
                 href={linkUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full text-center rounded text-lg px-2 py-2 bg-gray-300 hover:bg-gray-300/60 transition-colors duration-500 font-semibold"
+                className="w-full text-center rounded-3xl text-lg px-2 py-2 bg-gray-300 hover:bg-gray-300/60 transition-colors duration-500 font-semibold"
               >
                 Visit
               </a>
