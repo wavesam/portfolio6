@@ -102,7 +102,7 @@ function App() {
               description="This website! Built using React, TypeScript, and Tailwind CSS. Check out the source code on my GitHub."
               technologies={["React", "TypeScript", "Tailwind CSS"]}
               linkUrl="https://wavesam.io"
-              githubUrl="https://github.com/wavesam/wavesam.github.io"
+              githubUrl="https://github.com/wavesam/portfolio6"
             ></ProjectCard>
           </div>
           <div className="mt-3 w-full h-full flex flex-col gap-5">
