@@ -18,9 +18,13 @@ const ProjectCard = ({
   image,
 }: ProjectParams) => {
   return (
-    <div className="flex flex-col gap-5 justify-between p-5 border-2 rounded-3xl bg-white shadow-md hover:shadow-2xl transition-shadow duration-300">
+    <div className="flex flex-col gap-5 justify-between p-5 rounded-3xl bg-gradient-to-b from-white to-neutral-100 shadow-md shadow-neutral-400 hover:shadow-lg transition-shadow duration-300">
       {image && (
-        <img src={image} className="h-[200px] object-cover rounded-2xl"></img>
+        <img
+          src={image}
+          className="h-[200px] object-cover rounded-2xl"
+          loading="lazy"
+        ></img>
       )}
       <div className="flex flex-col gap-3">
         <div className="text-2xl font-bold">{title}</div>

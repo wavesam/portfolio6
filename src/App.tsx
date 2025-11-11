@@ -1,6 +1,7 @@
 import "./App.css";
 import SocialMediaIcons from "./components/SocialMediaIcons";
 import ProjectCard from "./components/ProjectCard";
+import BackToTop from "./components/BackToTop";
 
 // Import images
 import profilePhoto from "./images/profile_photo.jpeg";
@@ -12,36 +13,40 @@ import acneImpactPhoto from "./images/acne_impact_photo.png";
 
 function App() {
   return (
-    <div className="min-h-screen w-screen flex items-center justify-center bg-sky-100">
+    <div className="min-h-screen w-screen flex items-center justify-center bg-gradient-to-b from-sky-100 to-blue-100">
       <div className="my-10 md:w-2/3 flex flex-col xl:flex-row gap-20 text-xl font-sans">
-        <div className="xl:sticky xl:top-35 xl:w-1/3 h-full">
+        <aside className="xl:sticky xl:top-35 xl:w-1/3 h-full">
           <div className="xl:mt-0 items-center xl:items-start flex flex-col gap-5 text-center xl:text-left">
             <img
               src={profilePhoto}
               alt="profile pic"
-              className="w-[200px] h-[200px] xl:w-full xl:h-full border-2 rounded-full xl:rounded-3xl shadow-md hover:shadow-2xl transition-shadow duration-300"
+              className="w-[200px] h-[200px] xl:w-full xl:h-full rounded-full xl:rounded-3xl shadow-md hover:shadow-lg transition-shadow duration-300"
+              loading="lazy"
             ></img>
 
             <div className="font-bold">
-              <span className="text-3xl">Hey, I'm</span> <br></br>
-              <span className="text-4xl text-sky-900">Samuel Lee.</span>
+              <span className="text-3xl">Hey, I'm</span> <br />
+              <h1 className="text-4xl text-sky-900">Samuel Lee.</h1>
             </div>
             <SocialMediaIcons></SocialMediaIcons>
             <p className="w-3/4 sm:w-full">
               Studying Information and AI Engineering @ PolyU
             </p>
           </div>
-        </div>
-        <div className="-mt-10 xl:mt-0 w-full xl:w-2/3 h-full p-10 flex flex-col gap-10 overflow-y-scroll [scrollbar-width:none] [&::-webkit-scrollbar]:hidden bg-sky-50 rounded-3xl">
+        </aside>
+        <section className="-mt-10 xl:mt-0 w-full xl:w-2/3 h-full p-10 flex flex-col gap-10 overflow-y-scroll [scrollbar-width:none] [&::-webkit-scrollbar]:hidden bg-gradient-to-b from-sky-50 to-blue-50 rounded-3xl shadow-md">
           <div className="flex flex-col gap-5">
             <h1 className="text-4xl font-bold text-sky-900">About Me</h1>
             <p>
-              I'm Samuel, a first-year AI Engineering student at PolyU exploring
-              both hardware and software through projects like underwater
-              robotics competitions and web development.
+              As a first-year AI Engineering student at PolyU, I focus on
+              turning complex problems into working systems. I work across the
+              stack, developing full-stack web platforms, training neural
+              networks for computer vision, and coding robotics for competitive
+              challenges.
             </p>
-            <h1 className="mt-5 text-4xl font-bold text-sky-900">Experience</h1>
-            <h1 className="text-2xl font-bold">Internships</h1>
+          </div>
+          <div className="flex flex-col gap-5">
+            <h2 className="text-2xl font-bold">Internships</h2>
             <ProjectCard
               title="Student Management System - Alphabag Limited"
               technologies={[
@@ -53,8 +58,9 @@ function App() {
               ]}
               description="Designed and developed a full-stack student management system from scratch using Next.js and Firebase. Engineered core features including user authentication, data management, and responsive UI."
             />
-            <h1 className="mt-5 text-4xl font-bold text-sky-900">Projects</h1>
-            <h1 className="text-2xl font-bold">Software Development</h1>
+          </div>
+          <div className="mt-3 flex flex-col gap-5">
+            <h1 className="text-2xl font-bold">Personal Projects</h1>
             <ProjectCard
               title="Handwriting Classification CNN"
               technologies={[
@@ -97,8 +103,8 @@ function App() {
               linkUrl="https://www.figma.com/proto/ZY70oHTHqmzgbENcxp4HEG/Acne-Impact?node-id=63-1399&p=f&t=BmK1G79Qrj2arsCr-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=63%3A1399"
             ></ProjectCard>
           </div>
-          <div className="w-full h-full flex flex-col gap-5">
-            <h1 className="text-2xl font-bold">Robotics & Competitions</h1>
+          <div className="mt-3 w-full h-full flex flex-col gap-5">
+            <h2 className="text-2xl font-bold">Robotics & Competitions</h2>
             <ProjectCard
               title="Mini-ROV Competition"
               technologies={["C++", "Arduino"]}
@@ -112,8 +118,8 @@ function App() {
               image={vexCompetitionPhoto}
             ></ProjectCard>
           </div>
-          <div className="w-full h-full flex flex-col gap-5">
-            <h1 className="mt-5 text-4xl font-bold text-sky-900">Skills</h1>
+          <div className="mt-3 w-full h-full flex flex-col gap-5">
+            <h2 className="text-2xl font-bold">Skills</h2>
             <ProjectCard
               title="AI/ML"
               description="Python, TensorFlow, OpenCV, scikit-learn"
@@ -131,8 +137,9 @@ function App() {
               description="Git, Vite, VEXcode"
             ></ProjectCard>
           </div>
-        </div>
+        </section>
       </div>
+      <BackToTop></BackToTop>
     </div>
   );
 }
