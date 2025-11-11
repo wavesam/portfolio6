@@ -40,7 +40,20 @@ function App() {
               both hardware and software through projects like underwater
               robotics competitions and web development.
             </p>
-            <h1 className="text-4xl font-bold text-sky-900">Projects</h1>
+            <h1 className="mt-5 text-4xl font-bold text-sky-900">Experience</h1>
+            <h1 className="text-2xl font-bold">Internships</h1>
+            <ProjectCard
+              title="Student Management Platform - Alphabag"
+              technologies={[
+                "Next.js",
+                "TypeScript",
+                "Firebase",
+                "Full-stack Development",
+              ]}
+              description="Developing a full-stack student management platform from the ground up. Architecting scalable backend services and establishing a robust foundation for future AI-driven feature integration."
+              githubUrl="https://github.com/wavesam/alphabag-platform"
+            />
+            <h1 className="mt-5 text-4xl font-bold text-sky-900">Projects</h1>
             <h1 className="text-2xl font-bold">Software Development</h1>
             <ProjectCard
               title="Handwriting Classification CNN"
@@ -100,7 +113,7 @@ function App() {
             ></ProjectCard>
           </div>
           <div className="w-full h-full flex flex-col gap-5">
-            <h1 className="text-4xl font-bold text-black">Skills</h1>
+            <h1 className="mt-5 text-4xl font-bold text-sky-900">Skills</h1>
             <ProjectCard
               title="AI/ML"
               description="Python, TensorFlow, OpenCV, scikit-learn"
