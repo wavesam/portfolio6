@@ -13,9 +13,9 @@ import acneImpactPhoto from "./images/acne_impact_photo.png";
 function App() {
   return (
     <div className="min-h-screen w-screen flex items-center justify-center bg-sky-100">
-      <div className="my-15 md:w-2/3 flex flex-col xl:flex-row gap-20 text-xl font-sans">
+      <div className="my-10 md:w-2/3 flex flex-col xl:flex-row gap-20 text-xl font-sans">
         <div className="xl:sticky xl:top-35 xl:w-1/3 h-full">
-          <div className="items-center xl:items-start flex flex-col gap-5 text-center xl:text-left">
+          <div className="xl:mt-0 items-center xl:items-start flex flex-col gap-5 text-center xl:text-left">
             <img
               src={profilePhoto}
               alt="profile pic"
@@ -32,7 +32,7 @@ function App() {
             </p>
           </div>
         </div>
-        <div className="-mt-10 xl:mt-0 w-full xl:w-2/3 h-full p-10 flex flex-col gap-10 overflow-y-scroll [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+        <div className="-mt-10 xl:mt-0 w-full xl:w-2/3 h-full p-10 flex flex-col gap-10 overflow-y-scroll [scrollbar-width:none] [&::-webkit-scrollbar]:hidden bg-sky-50 rounded-3xl">
           <div className="flex flex-col gap-5">
             <h1 className="text-4xl font-bold text-sky-900">About Me</h1>
             <p>
@@ -43,15 +43,15 @@ function App() {
             <h1 className="mt-5 text-4xl font-bold text-sky-900">Experience</h1>
             <h1 className="text-2xl font-bold">Internships</h1>
             <ProjectCard
-              title="Student Management Platform - Alphabag"
+              title="Student Management System - Alphabag Limited"
               technologies={[
                 "Next.js",
-                "TypeScript",
                 "Firebase",
-                "Full-stack Development",
+                "TypeScript",
+                "Full-Stack Development",
+                "System Architecture",
               ]}
-              description="Developing a full-stack student management platform from the ground up. Architecting scalable backend services and establishing a robust foundation for future AI-driven feature integration."
-              githubUrl="https://github.com/wavesam/alphabag-platform"
+              description="Designed and developed a full-stack student management system from scratch using Next.js and Firebase. Engineered core features including user authentication, data management, and responsive UI."
             />
             <h1 className="mt-5 text-4xl font-bold text-sky-900">Projects</h1>
             <h1 className="text-2xl font-bold">Software Development</h1>
