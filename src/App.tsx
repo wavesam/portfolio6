@@ -14,10 +14,10 @@ import acneImpactPhoto from "./images/acne_impact_photo.png";
 function App() {
   return (
     <main className="min-h-screen w-screen flex items-center justify-center bg-blue-200">
-      <div className="md:w-[600px] xl:w-[900px] flex flex-col xl:flex-row gap-[70px] text-xl font-sans text-neutral-800">
-        <aside className="mt-10 -mb-10 xl:my-0 xl:h-screen xl:sticky top-0 flex items-center justify-center">
-          <div className="xl:mb-0 xl:w-[250px] text-center xl:text-left">
-            <div className="xl:mt-0 items-center xl:items-start flex flex-col gap-5">
+      <div className="md:w-[600px] lg:w-[900px] flex flex-col lg:flex-row gap-[70px] text-xl font-sans text-neutral-800">
+        <aside className="mt-10 -mb-10 lg:my-0 lg:h-screen lg:sticky top-0 flex items-center justify-center">
+          <div className="lg:mb-0 lg:w-[250px] text-center lg:text-left">
+            <div className="lg:mt-0 items-center lg:items-start flex flex-col gap-5">
               <img
                 src={profilePhoto}
                 alt="profile pic"
@@ -38,7 +38,7 @@ function App() {
           </div>
         </aside>
 
-        <article className="my-10 w-full xl:w-2/3 h-full p-10 flex flex-col gap-10 overflow-y-scroll [scrollbar-width:none] [&::-webkit-scrollbar]:hidden bg-blue-100 rounded-3xl">
+        <article className="my-10 w-full lg:w-2/3 h-full p-10 flex flex-col gap-10 overflow-y-scroll [scrollbar-width:none] [&::-webkit-scrollbar]:hidden bg-blue-100 rounded-3xl">
           <section className="flex flex-col gap-5">
             <h2 className="text-2xl font-bold text-blue-900">About Me</h2>
             <p>
