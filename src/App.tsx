@@ -13,30 +13,34 @@ import acneImpactPhoto from "./images/acne_impact_photo.png";
 
 function App() {
   return (
-    <div className="min-h-screen w-screen flex items-center justify-center bg-blue-200">
-      <div className="my-10 md:w-2/3 flex flex-col xl:flex-row gap-[7%] text-xl font-sans text-neutral-800">
-        <aside className="xl:mb-0 xl:sticky xl:top-[18%] xl:w-1/3 h-full">
-          <div className="xl:mt-0 items-center xl:items-start flex flex-col gap-5 text-center xl:text-left">
-            <img
-              src={profilePhoto}
-              alt="profile pic"
-              className="w-[200px] h-[200px] xl:w-full xl:h-full rounded-full xl:rounded-3xl shadow-md hover:shadow-lg opacity-85 hover:opacity-95 transition duration-300"
-              loading="lazy"
-            ></img>
-
-            <div className="font-bold">
-              <span className="text-3xl">Hey, I'm</span> <br />
-              <h1 className="text-4xl text-blue-900">Samuel Lee.</h1>
+    <main className="min-h-screen w-screen flex items-center justify-center bg-blue-200">
+      <div className="md:w-[600px] xl:w-[900px] flex flex-col xl:flex-row gap-[70px] text-xl font-sans text-neutral-800">
+        <aside className="mt-10 -mb-10 xl:my-0 xl:h-screen xl:sticky top-0 flex items-center justify-center">
+          <div className="xl:mb-0 xl:w-[250px] text-center xl:text-left">
+            <div className="xl:mt-0 items-center xl:items-start flex flex-col gap-5">
+              <img
+                src={profilePhoto}
+                alt="profile pic"
+                className="w-[230px] h-[230px] rounded-full hover:shadow-lg opacity-85 hover:opacity-95 transition duration-300"
+                loading="lazy"
+              />
+              <div className="w-full font-bold">
+                <span className="text-3xl">Hey, I'm</span> <br />
+                <h1 className="text-4xl text-blue-900">Samuel Lee.</h1>
+              </div>
+              <p className="w-3/4 sm:w-full">
+                Studying Information and AI Engineering @ PolyU
+              </p>
+              <div className="opacity-70">
+                <SocialMediaIcons></SocialMediaIcons>
+              </div>
             </div>
-            <SocialMediaIcons></SocialMediaIcons>
-            <p className="w-3/4 sm:w-full">
-              Studying Information and AI Engineering @ PolyU
-            </p>
           </div>
         </aside>
-        <section className="mt-10 xl:mt-0 w-full xl:w-2/3 h-full p-10 flex flex-col gap-10 overflow-y-scroll [scrollbar-width:none] [&::-webkit-scrollbar]:hidden bg-blue-100 rounded-3xl shadow-md">
-          <div className="flex flex-col gap-5">
-            <h1 className="text-4xl font-bold text-blue-900">About Me</h1>
+
+        <article className="my-10 w-full xl:w-2/3 h-full p-10 flex flex-col gap-10 overflow-y-scroll [scrollbar-width:none] [&::-webkit-scrollbar]:hidden bg-blue-100 rounded-3xl">
+          <section className="flex flex-col gap-5">
+            <h2 className="text-2xl font-bold text-blue-900">About Me</h2>
             <p>
               As a first-year AI Engineering student at PolyU, I focus on
               turning complex problems into working systems. I work across the
@@ -44,8 +48,9 @@ function App() {
               networks for computer vision, and coding robotics for competitive
               challenges.
             </p>
-          </div>
-          <div className="flex flex-col gap-5">
+          </section>
+
+          <section className="flex flex-col gap-5">
             <h2 className="text-2xl text-blue-900 font-bold">Internships</h2>
             <ProjectCard
               title="Student Management System - Alphabag Limited"
@@ -58,11 +63,12 @@ function App() {
               ]}
               description="Designed and developed a full-stack student management system from scratch using Next.js and Firebase. Engineered core features including user authentication, data management, and responsive UI."
             />
-          </div>
-          <div className="mt-3 flex flex-col gap-5">
-            <h1 className="text-2xl text-blue-900 font-bold">
+          </section>
+
+          <section className="mt-3 flex flex-col gap-5">
+            <h2 className="text-2xl text-blue-900 font-bold">
               Personal Projects
-            </h1>
+            </h2>
             <ProjectCard
               title="Family Handwriting Classifier"
               technologies={[
@@ -104,8 +110,9 @@ function App() {
               linkUrl="https://wavesam.io"
               githubUrl="https://github.com/wavesam/portfolio6"
             ></ProjectCard>
-          </div>
-          <div className="mt-3 w-full h-full flex flex-col gap-5">
+          </section>
+
+          <section className="mt-3 w-full h-full flex flex-col gap-5">
             <h2 className="text-2xl text-blue-900 font-bold">
               Robotics & Competitions
             </h2>
@@ -121,8 +128,9 @@ function App() {
               description="A competition I went to in high school as part of my school's robotics team. We built a robot to compete in various challenges."
               image={vexCompetitionPhoto}
             ></ProjectCard>
-          </div>
-          <div className="mt-3 w-full h-full flex flex-col gap-5">
+          </section>
+
+          <section className="mt-3 w-full h-full flex flex-col gap-5">
             <h2 className="text-2xl text-blue-900 font-bold">Skills</h2>
             <ProjectCard
               title="AI/ML"
@@ -140,11 +148,11 @@ function App() {
               title="Tools"
               description="Git, Vite, VEXcode"
             ></ProjectCard>
-          </div>
-        </section>
+          </section>
+        </article>
       </div>
       <BackToTop></BackToTop>
-    </div>
+    </main>
   );
 }
 

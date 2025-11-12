@@ -5,7 +5,7 @@ const SocialMediaIcons = () => {
         href="https://github.com/wavesam"
         target="_blank"
         rel="noopener noreferrer"
-        className="hover:text-gray-400 transition-colors duration-200"
+        className="hover:opacity-80 transition duration-300"
         aria-label="GitHub"
       >
         <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
@@ -17,7 +17,7 @@ const SocialMediaIcons = () => {
         href="https://linkedin.com/in/wavesam"
         target="_blank"
         rel="noopener noreferrer"
-        className="hover:text-gray-400 transition-colors duration-200"
+        className="hover:opacity-80 transition duration-300"
         aria-label="LinkedIn"
       >
         <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
@@ -29,7 +29,7 @@ const SocialMediaIcons = () => {
         href="mailto:samuel@wavesam.io"
         target="_blank"
         rel="noopener noreferrer"
-        className="hover:text-gray-400 transition-colors duration-200"
+        className="hover:opacity-80 transition duration-300"
         aria-label="Email"
       >
         <svg

@@ -18,7 +18,7 @@ const ProjectCard = ({
   image,
 }: ProjectParams) => {
   return (
-    <div className="flex flex-col gap-5 justify-between p-5 rounded-3xl bg-gradient-to-b from-white to-neutral-100 shadow-md shadow-neutral-400 hover:shadow-lg xl:rotate-1 hover:rotate-0 transition duration-300">
+    <div className="flex flex-col gap-5 justify-between p-5 rounded-3xl bg-gradient-to-b from-white to-neutral-100 shadow-md shadow-neutral-400 hover:shadow-lg md:rotate-1 hover:rotate-0 transition duration-300">
       {image && (
         <img
           src={image}
@@ -49,7 +49,7 @@ const ProjectCard = ({
                 href={githubUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full text-center rounded-3xl text-lg px-2 py-2 bg-gray-300 hover:bg-gray-300/60 transition-colors duration-500 font-semibold"
+                className="w-full text-center rounded-3xl text-lg px-2 py-2 bg-blue-900 text-white hover:opacity-80 transition-opacity duration-300 font-semibold"
               >
                 View on GitHub
               </a>
@@ -59,7 +59,7 @@ const ProjectCard = ({
                 href={linkUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full text-center rounded-3xl text-lg px-2 py-2 bg-gray-300 hover:bg-gray-300/60 transition-colors duration-500 font-semibold"
+                className="w-full text-center rounded-3xl text-lg px-2 py-2 bg-neutral-800 text-white hover:opacity-80 transition-opacity duration-300 font-semibold"
               >
                 Visit
               </a>
